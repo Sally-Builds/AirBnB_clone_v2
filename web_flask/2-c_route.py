@@ -19,10 +19,11 @@ def hbnb():
     """Returns a given string"""
     return ("HBNB")
 
+
 @app.route("/c/<text>", strict_slashes=False)
-def c(text):
-    """blah blah"""
-    return (text.replace("_", " "))
+def cText(text):
+    """display C followed by the value of the text variable"""
+    return "C {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
